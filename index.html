@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <!--la siguiente linea de codigo sirve para hacer que el codigo se adapte a cualquier dispositivo-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mundo Radiohead</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo">Mundo Radiohead</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#artistas">Musicos</a></li>
+        <li><a href="#albums">Álbumes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="hero">
+      <h2>Descubre datos sobre Radiohead</h2>
+      <p>Explora los albunes de Radiohead</p>
+      <a class="cta" href="#artistas">Explorar ahora</a>
+    </section>
+    <section id="artistas" class="container">
+      <h3>Miembros Radiohead</h3>
+      <p>Conoce a los integrantes.</p>
+      <ul class="grid">
+        <li class="card">🎤 Tom Yorke</li>
+        <li class="card">🎸 Jonny Greenwood</li>
+        <li class="card">🥁 Phil Selway</li>
+        <li class="card">🎧 Colin Greenwood</li>
+      </ul>
+    </section>
+    <section id="albums" class="container">
+      <h3>Álbumes Recomendados</h3>
+      <p>Algunos de los discos más escuchados:</p>
+      <ul class="grid">
+        <li class="card">💿 Ok Computer</li>
+        <li class="card">💿 Pablo Honey</li>
+        <li class="card">💿 In Rainbows</li>
+        <li class="card">💿 Kid A</li>
+      </ul>
+    </section>
+    <section id="contacto" class="container">
+      <h3>Contacto</h3>
+      <p>Escríbenos a: <a href="luis.manchegol@cun.edu.co">luis.manchegol@cun.edu.co</a></p>
+    </section>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

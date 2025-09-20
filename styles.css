@@ -1,0 +1,87 @@
+styles.css
+/* reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f9f9ff;
+  --card: #fff;
+  --accent: #ff3366;
+  --text: #222;
+  --gap: 1rem;
+  --radius: 12px;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  padding: 1.25rem;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  background: var(--card);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.nav-list { list-style: none; display: flex; gap: 1rem; }
+.nav-list a { text-decoration: none; font-weight: 600; color: var(--accent); }
+
+/* Hero */
+.hero {
+  margin-top: 1rem;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(255,51,102,0.08), rgba(255,51,102,0.02));
+  border-radius: var(--radius);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: .75rem;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  background: var(--accent);
+  color: white;
+}
+
+/* Contenedores */
+.container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.grid {
+  list-style: none;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--gap);
+}
+
+.card {
+  background: var(--bg);
+  padding: 1rem;
+  border-radius: var(--radius);
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .site-header { flex-direction: column; align-items: flex-start; }
+  .nav-list { flex-wrap: wrap; }
+}
